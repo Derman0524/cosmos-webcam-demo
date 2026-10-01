@@ -18,7 +18,7 @@ RTX 5090. The clip uses the prompt **"Describe what you see in this image in
 one sentence."** The webcam feed, generated descriptions, and live performance
 readings are visible. This is an exploratory scene-description demonstration.
 
-https://github.com/user-attachments/assets/27c8e295-9c54-4b26-8054-e3dba4ce8b89
+https://github.com/user-attachments/assets/a5fa16df-8aec-493e-9f5c-0779c9364889
 
 The player uses a compressed copy for quick loading.
 [Download the full-quality cropped recording (MP4, 16.8 MB)](https://github.com/Derman0524/cosmos-webcam-demo/raw/refs/heads/main/media/cosmos3-edge.mp4).
