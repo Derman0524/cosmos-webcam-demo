@@ -10,6 +10,18 @@ backend, and web interface are NVIDIA projects; they were not developed here.
 Tested on a desktop RTX 5090 using Windows 11 and WSL2 Ubuntu 24.04.
 No JetPack or substitute inference backend is used.
 
+## Watch the demo
+
+A 31-second recording of Cosmos3-Edge responding to live webcam frames on the
+RTX 5090. The clip uses the prompt **"Describe what you see in this image in
+one sentence."** The webcam feed, generated descriptions, and live performance
+readings are visible. This is an exploratory scene-description demonstration.
+
+https://github.com/user-attachments/assets/27c8e295-9c54-4b26-8054-e3dba4ce8b89
+
+The player uses a compressed copy for quick loading.
+[Download the full-quality cropped recording (MP4, 16.8 MB)](https://github.com/Derman0524/cosmos-webcam-demo/raw/refs/heads/main/media/cosmos3-edge.mp4).
+
 ## What it does
 
 - Sends sampled webcam frames to the Cosmos3-Edge reasoning component.
@@ -35,8 +47,6 @@ flowchart LR
     Model -->|Streamed answer| UI
     UI -->|Answer displayed| Camera
 ```
-
-A demo recording can be added later; no personal camera footage is included.
 
 ## Run the existing installation
 
@@ -120,14 +130,15 @@ See [methodology and limitations](docs/BENCHMARKS.md),
 | `scripts/windows/` | WSL start, stop, and status shortcuts |
 | `requirements/` | Package snapshots from the working installation |
 | `results/2026-09-30/` | Sanitized numeric data and summary |
+| `media/` | Public demo recording |
 | `docs/` | Setup, architecture, configuration, attribution, and limitations |
 | `tests/` | Checks for service lifecycle, privacy defaults, and package consistency |
 
 Fresh installations using this repository do not save webcam images or
 generated scene descriptions by default. Local logs may still contain prompts
 or upstream request details; review logs before sharing them. The historical
-run used more verbose instrumentation; private raw logs and captured frames
-are not included here.
+run used more verbose instrumentation; private raw logs and per-frame capture
+files are not included here. The edited demo recording above is shared separately.
 
 Run the packaging checks inside Linux/WSL without starting the model:
 

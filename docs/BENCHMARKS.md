@@ -55,4 +55,6 @@ export; the preserved summary uses the same cleaned data.
 
 Run `python3 scripts/linux/summarize_public_results.py` from this repository to
 verify that both numeric exports reproduce `results/2026-09-30/summary.json`.
-The historical prompts, responses, raw logs, and webcam images stay local.
+The full historical prompt/response logs and per-frame webcam captures stay
+local. The README separately includes a public demo screencast showing the
+interface and its visible responses.
