@@ -1,0 +1,59 @@
+{
+  "object_prompt": {
+    "ttft_ms": {
+      "count": 20,
+      "median": 25.128920499980723,
+      "p95": 103.94417200006956,
+      "minimum": 22.57842200003779,
+      "maximum": 105.79656099992008
+    },
+    "request_to_final_ms": {
+      "count": 20,
+      "median": 37.064538500032995,
+      "p95": 201.41718699994726,
+      "minimum": 30.173826000009285,
+      "maximum": 228.51267999999436
+    },
+    "frame_preprocess_to_final_ms": {
+      "count": 20,
+      "median": 37.555544500037286,
+      "p95": 201.9000169999572,
+      "minimum": 30.67113400004473,
+      "maximum": 229.3429119999928
+    }
+  },
+  "all_mixed_prompts": {
+    "ttft_ms": {
+      "count": 183,
+      "median": 23.061762999986968,
+      "p95": 99.3454719998681,
+      "minimum": 20.380679999902895,
+      "maximum": 221.60573800010752
+    },
+    "request_to_final_ms": {
+      "count": 183,
+      "median": 120.14698500001941,
+      "p95": 207.9781060000414,
+      "minimum": 30.173826000009285,
+      "maximum": 301.60452800009807
+    },
+    "frame_preprocess_to_final_ms": {
+      "count": 183,
+      "median": 120.5104929999834,
+      "p95": 208.4689079999862,
+      "minimum": 30.67113400004473,
+      "maximum": 302.26210199998604
+    }
+  },
+  "live_total_gpu_memory_mib": {
+    "count": 383,
+    "median": 8112,
+    "p95": 8211,
+    "minimum": 8004,
+    "maximum": 8433
+  },
+  "all_recorded_gpu_peak_mib": 19198,
+  "samples": 183,
+  "object_prompt_samples": 20,
+  "measurement_note": "TTFT starts immediately before the HTTP request. Frame-to-final starts before JPEG encoding and ends after the streamed response. Camera exposure, WebRTC transport, browser rendering and sampling wait are not included; true camera-to-screen latency was not measured."
+}
