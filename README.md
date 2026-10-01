@@ -8,7 +8,8 @@ backend, and web interface are NVIDIA projects; they were not developed here.
 **NVIDIA Cosmos3-Edge → TensorRT Edge-LLM → NVIDIA live-vlm-webui**
 
 Tested on a desktop RTX 5090 using Windows 11 and WSL2 Ubuntu 24.04.
-No JetPack or substitute inference backend is used.
+No JetPack or substitute inference backend is used. Additionally, this consumes
+less than 10gb of VRAM. Therefore, powerful GPUs are not required to test.
 
 ## Watch the demo
 
