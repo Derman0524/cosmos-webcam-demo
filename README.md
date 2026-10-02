@@ -9,7 +9,7 @@ backend, and web interface are NVIDIA projects; they were not developed here.
 
 Tested on a desktop RTX 5090 using Windows 11 and WSL2 Ubuntu 24.04.
 No JetPack or substitute inference backend is used. Additionally, this consumes
-less than 10gb of VRAM. Therefore, powerful GPUs are not required to test.
+less than 10gb of VRAM. NVIDIA's original demo ran on a Jetson Orin, so a top of the line GPU isn't required. On this desktop, whole-GPU memory while running was about 8 GB, including Windows. The one-time engine build peaked at 18.75 GB. Smaller desktop GPUs have not been tested here but should be able to run.
 
 ## Watch the demo
 
